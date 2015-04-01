@@ -2,8 +2,8 @@
   "name": "hugh",
   "version": "0.0.0",
   "private": true,
-  "author": "Haralan Dobrev <hkdobrev@gmail.com>",
-  "description": "A simple helpful robot for your Company",
+  "author": "Haralan Dobrev <harry@clippings.com>",
+  "description": "I am a happy Clippings robot to help you with tasks in Slack! Created with the power of the mighty GitHub.",
   "dependencies": {
     "hubot": "^2.11.4",
     "hubot-diagnostics": "0.0.1",
