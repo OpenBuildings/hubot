@@ -8,5 +8,10 @@
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-shipit",
-  "hubot-youtube"
+  "hubot-youtube",
+  "hubot-thank-you",
+  "hubot-zendesk",
+  "hubot-mailchimp",
+  "hubot-caniuse",
+  "hubot-trello"
 ]
