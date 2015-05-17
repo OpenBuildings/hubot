@@ -14,10 +14,12 @@ module.exports = (robot) ->
           res.send 'No such report'
           return
 
-        texts = for own key, value of JSON.parse body
-          "#{key}: #{value}"
+        data = JSON.parse body
+        unless Array.isArray data
+          data = for own key, value of data
+            "#{key}: #{value}"
 
-        res.send texts.join "\n"
+        res.send data.join "\n"
 
 
 
