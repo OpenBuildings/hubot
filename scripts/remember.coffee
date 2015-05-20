@@ -3,10 +3,10 @@
 #
 # Commands:
 #   hubot what is|remember <key> - Returns a string
-#   hubot remember <key> is <value>. - Returns nothing. Remembers the text for next time!
+#   hubot remember <key> is <value> - Returns nothing. Remembers the text for next time!
 #   hubot what do you remember - Returns everything hubot remembers.
 #   hubot forget <key> - Removes key from hubots brain.
-#   hubot what are your favorite memories? - Returns a list of the most remembered memories.
+#   hubot what are your favourite memories - Returns a list of the most remembered memories.
 #   hubot random memory - Returns a random string
 #
 # Dependencies:
@@ -74,13 +74,13 @@ module.exports = (robot) ->
     keys.push key for key of memories()
     msg.send "I remember:\n#{keys.join('\n')}"
 
-  robot.respond /what are your favorite memories/i, (msg) ->
+  robot.respond /what are your favourite memories/i, (msg) ->
     msg.finish()
     sortedMemories = _.sortBy Object.keys(memoriesByRecollection()), (key) ->
       memoriesByRecollection()[key]
     sortedMemories.reverse()
 
-    msg.send "My favorite memories are:\n#{sortedMemories[0..20].join('\n')}"
+    msg.send "My favourite memories are:\n#{sortedMemories[0..20].join('\n')}"
 
   robot.respond /(me|random memory|memories)$/i, (msg) ->
     msg.finish()
