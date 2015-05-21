@@ -11,5 +11,6 @@
   "hubot-zendesk",
   "hubot-mailchimp",
   "hubot-caniuse",
-  "hubot-trello"
+  "hubot-trello",
+  "hubot-remind"
 ]
