@@ -95,6 +95,6 @@ module.exports = (robot) ->
     unless msg.match[2]
       count = 10
     else
-      count = parseInt(msg.match[2])
+      count = parseInt(msg.match[2], 10)
 
     msg.send(msg.random(keys)) for [1..count]
