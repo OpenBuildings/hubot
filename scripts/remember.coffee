@@ -8,6 +8,7 @@
 #   hubot forget <key> - Removes key from hubots brain.
 #   hubot what are your favourite memories - Returns a list of the most remembered memories.
 #   hubot random memory - Returns a random string
+#   hubot memory bomb N - Returns N memories at once
 #
 # Dependencies:
 #   "underscore": "*"
