@@ -17,7 +17,7 @@
     "hubot-remind": "^0.1.4",
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.1.2",
-    "hubot-slack": "^3.3.0",
+    "hubot-slack": "git://github.com/hkdobrev/hubot-slack#mention-@",
     "hubot-thank-you": "0.0.3",
     "hubot-trello": "^0.1.1",
     "hubot-youtube": "^0.1.2",
